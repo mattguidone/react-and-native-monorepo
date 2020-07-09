@@ -1,0 +1,24 @@
+{
+  "name": "react-and-native-monorepo",
+  "version": "1.0.0",
+  "private": true,
+  "workspaces": {
+    "packages": [
+      "packages/*"
+    ],
+    "nohoist": []
+  },
+  "description": "",
+  "dependencies": {
+    "react-native": "0.62.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compile": "tsc -b --incremental --verbose",
+    "android": "yarn workspace mobile android",
+    "ios": "yarn workspace mobile ios"
+  },
+  "author": "mattguidone",
+  "license": "ISC"
+}
